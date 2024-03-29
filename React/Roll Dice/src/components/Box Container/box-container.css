@@ -1,0 +1,89 @@
+/* Styles for the box container */
+.container {
+    width: 100%;
+    max-width: 25rem;
+    margin: 1em;
+    padding: 4em 0;
+
+    border: var(--border-width) solid var(--border-color);
+    border-radius: 1em;
+
+    background-color: var(--bg-secondary);
+    box-shadow: 5px 10px 1px 0px var(--shadow);
+}
+
+
+/* Dice Wrapper with image */
+.dice-wrapper {
+    max-width: 8rem;
+
+    margin-inline: auto;
+    margin-bottom: 2rem;
+    padding: 1em;
+
+    border: var(--border-width) solid var( --border-color);
+    border-radius: .5em;
+    box-shadow: 4px 6px 0px 1px var(--shadow);
+}
+
+/* Dice Image */
+.dice-img {
+    transition: all 500ms;
+}
+
+/* Dice Image animation when change */
+.flip-rotation {
+    animation: roll .5s ease-in-out;
+}
+
+/* Button for roll the dice */
+.roll-btn {
+    margin-inline: auto;
+    padding: .25em .5em;
+
+    border: var( --border-width) solid var( --border-color);
+    border-radius: .25em;
+    box-shadow: 4px 4px 0px 1px var(--shadow);
+
+    transition: 500ms;
+    cursor: pointer;
+}
+
+.roll-btn:hover {
+    background-color: var(--btn-hv-bg);
+}
+
+
+/* Text for button */
+.btn-text {
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-btn);
+}
+
+
+
+/* Rolling dice animation frames */
+@keyframes roll {
+    0% {
+        transform: rotate(0);
+    }
+
+    50% {
+        transform: rotateY(180deg);
+    }
+
+    100% {
+        transform: rotateX(180deg);
+    }
+}
+
+/* Media Queries */
+@media (min-width: 425px) {
+    .dice-wrapper {
+        max-width: 10rem;
+    }
+
+    .roll-btn {
+        padding: .45em .75em;
+    }
+}

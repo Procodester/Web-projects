@@ -1,0 +1,44 @@
+/* Global Variables */
+
+:root{
+  /* Colors */
+  --bg-primary: #F6F4E6;
+  --bg-secondary: #FDF0D1;
+  --btn-hv-bg: #FFF78A;
+
+
+  /* Border and Shadows */
+  --border-width: 5px;
+  --border-color: #000000;
+  --shadow: rgba(0,0,0,0.85);
+
+  /* Font Size */
+  --fs-logo: 1rem;
+  --fs-btn: 1.5rem;
+  
+  /* Font Weight */
+  --fw-logo: 800;
+  --fw-btn: 600;
+
+
+}
+
+/* Main Whole Viewport */
+main{
+  min-height: 100dvh;
+  background-color: var(--bg-primary);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  
+}
+
+
+/* Media Queries */
+@media (min-width: 425px){
+  :root{
+    --fs-logo: 1.25rem;
+    --fs-btn: 1.75rem;
+  }
+}
