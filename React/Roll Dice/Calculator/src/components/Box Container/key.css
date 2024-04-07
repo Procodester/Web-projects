@@ -1,0 +1,38 @@
+/* Styles for the button element */
+
+.key-btn {
+    background-color: var(--btn-bg);
+
+    padding: 0.5em;
+    cursor: pointer;
+
+    border: var(--btn-border);
+    border-radius: var(--border-radius);
+
+    box-shadow: var(--btn-shadow);
+}
+
+/* Hover styles for the button element */
+
+.key-btn:hover {
+    background-color: var(--btn-hv-bg);
+    box-shadow: var(--btn-shadow-hv);
+}
+
+/* Styles for the text  of the button */
+.key-text {
+    font-size: var(--fs-btn);
+    font-weight: var(--fw-btn);
+}
+
+/* buttons with 'dark-btn' class */
+.dark-btn {
+    background-color: var(--btn-bg-dark);
+}
+
+/* Styles for the delete button icon */
+
+.img-del {
+    width: var(--fs-btn);
+    margin-inline: auto;
+}
